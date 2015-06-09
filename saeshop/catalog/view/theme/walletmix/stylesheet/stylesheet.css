@@ -1,0 +1,400 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative);
+@import url(http://fonts.googleapis.com/css?family=Merienda+One);
+
+
+body{
+    padding-top: 115px;
+}
+
+
+
+#header{
+    background: #fff;
+    -moz-box-shadow:0 5px 7px -8px #000000;
+    -webkit-box-shadow:0 5px 7px -8px #000000;
+    -ms-box-shadow:0 5px 7px -8px #000000;
+    -o-box-shadow:0 5px 7px -8px #000000;
+    box-shadow:0 5px 7px -8px #000000;
+    position: fixed;
+    top:0px;
+    margin: auto;
+    width: 100%;
+    z-index: 100;
+}
+
+#top_link{list-style: none;padding: 0;}
+#top_link li {
+    display: inline-block;
+    margin-top: 15px;
+}
+#top_link li a{
+    padding: 10px;
+    color: #706f6f;
+    font-family: 'Merienda One', cursive;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.cart{
+    float: right;
+}
+#cart button{
+    background: #f0f0f0;
+    border:none;
+    padding: 5px 15px;
+}
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    color: #fff;
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: outside none none;
+    min-width: 160px;
+    padding: 5px;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+
+/* top menu css Start */
+
+#top_menu{
+    width: 100%;
+}
+
+#categories ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#categories ul li{
+    display: inline-block;
+    position:relative;
+}
+
+#categories ul li a{
+    display: inline-block;
+    position:relative;
+    color: #706f6f;
+    font-family: 'Merienda One', cursive;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+}
+
+#categories ul li a:hover{
+    background: none repeat scroll 0 0 #24384e;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.7s ease;
+}
+
+#categories ul li > ul{
+    display: none;
+    box-shadow: 5px 0 9px 0 rgba(50, 50, 50, 0.45);
+}
+
+#categories ul li:hover > ul{
+    display: block;
+    position:absolute;
+    line-height:1.9em;
+    z-index: 100;
+}
+
+#categories ul li > ul li a{
+    display: block;
+    background: none no-repeat scroll center top #547;
+    font:13px Myriad Pro;
+    letter-spacing: 1px;
+    color:#fff;
+    width: 200px;
+}
+/* top menu css end */
+
+
+#logo{margin-top: 10px;}
+
+
+/* breadcrumb css start */
+.breadcrumb {
+    list-style: outside none none;
+    margin-bottom: 20px;
+    padding: 3px 0;
+    background: none;
+    font:12px Arial;
+}
+.breadcrumb a{color:#000;}
+.breadcrumb .fa{
+    color: #000;
+}
+/* breadcrumb css end */
+
+
+/* latest-list css start */
+.latest-list-item{text-align: center;margin-bottom: 15px;}
+.latest-list{
+    padding: 10px;
+    box-shadow: 0 0 5px #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.latest-list:hover{
+    box-shadow: 0 0 3px #626262;
+}
+
+.latest-list h3{
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 14px;
+    padding: 6px 0px 9px 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #999;
+}
+.latest-list img{
+    margin-left: auto;
+    margin-right:auto;
+    padding: 10px;
+}
+.latest-list div{
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px dotted #999;
+}
+.latest-list button{
+    background: #222;
+    border:none;
+    color:#fff;
+    padding: 7px 40px;
+}
+.latest-list-detail p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merienda One', cursive;
+    font-size: 12px;
+    color:#000;
+}
+.latest-list-detail p:first-child{
+    font-family: 'Merienda One', cursive;
+    font-size: 12px;
+    color: #3c6c34;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+/* latest-list css end */
+
+
+
+#category{
+    text-align: center;
+}
+
+
+
+/* category-sidebar css start */
+#category-sidebar{
+    list-style: none;
+    padding:0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+#category-sidebar li{
+    position: relative;
+}
+
+#category-sidebar li a{
+    background: #156;
+    color: #fff;
+    position: relative;
+    display: block;
+    padding: 6px 0px 6px 6px;
+    border-bottom: 1px solid #999;
+}
+
+#category-sidebar li a:hover{
+    background: #369;
+    transition: all 0.7s ease;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 0px 6px 6px;
+}
+
+#category-sidebar ul{
+    list-style: none;
+    padding:0;
+    display: none;
+    position: absolute;
+}
+
+#category-sidebar li:hover > ul{
+    display: block;
+    position: absolute;
+    left: 100%;
+    top:0;
+    margin-left: 1px;
+    width:100%;
+    z-index: 1000;
+}
+/* category-sidebar css end */
+
+
+
+/* details page css start */
+.detail_thumbnails{
+    list-style: none;
+    padding: 0;
+}
+
+.detail_thumbnails li:first-child{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail_thumbnails .image-additional{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 1px 1px 3px #999;
+}
+
+#details h1{
+    font:Myriad Pro;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+#details h3{
+    font:Myriad Pro;
+    font-weight: normal;
+    font-size: 15px;
+}
+#details p{
+    font:Myriad Pro;
+    font-weight: normal;
+    font-size: 12px;
+}
+#details button{
+    background: #222;
+    border:none;
+    color:#fff;
+    padding: 7px 40px;
+}
+
+/* details page css start */
+
+.products{
+    margin-top: 10px;
+}
+
+/* featured css start */
+
+#related-products{
+    text-align: center;
+}
+
+#related-products{
+    border: 1px solid #999;
+    color: #000;
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+#related-products h3{
+    border-bottom: 1px dotted #46515c;
+    font-family: Roboto,Arial;
+    font-size: 16px;
+    margin-top: 11px;
+    opacity: 0.5;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+#related-products img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#related-products p{
+    border-bottom: 1px dotted #46515c;
+    font-family: Roboto,Arial;
+    font-size: 16px;
+    margin-top: 11px;
+    opacity: 0.5;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+#related-products button{
+    color: #fff;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+    line-height: 33px;
+    margin: 0 10px 15px 0;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-left: auto;
+    background: #222;
+    border:none;
+    padding: 7px 40px;
+}
+/* related-products css end */
+
+
+
+/* footer css code start here */
+#footer{
+    background: #fff;
+    -moz-box-shadow:0 5px 7px 8px #f0f0f0;
+    -webkit-box-shadow:0 5px 7px 8px #f0f0f0;
+    -ms-box-shadow:0 5px 7px 8px #f0f0f0;
+    -o-box-shadow:0 5px 7px 8px #f0f0f0;
+    box-shadow:0 5px 7px 8px #f0f0f0;
+    padding: 15px 0px;
+    margin-top: 30px;
+}
+#footer h5{
+    border-bottom: 1px dotted #999;
+    color: #222;
+    font: bold 15px Myriad Pro;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+#footer li a{
+    color:#000;
+    font:12px Myriad Pro;
+}
+#footer p{
+    color:#000;
+    font:12px Myriad Pro;
+}
+#footer a{
+    color:#156;
+    font:12px Myriad Pro;
+}
+/* footer css code end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
